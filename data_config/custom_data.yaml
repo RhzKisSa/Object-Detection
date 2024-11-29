@@ -1,1 +1,18 @@
+# Images and labels directory should be relative to train.py
+TRAIN_DIR_IMAGES: '/content/fruit-detection/Fruits-detection/train/images'
+TRAIN_DIR_LABELS: '/content/annotations_xml'
+VALID_DIR_IMAGES: '/content/fruit-detection/Fruits-detection/valid/images'
+VALID_DIR_LABELS: '/content/annotations_xml_val'
 
+# Class names.
+CLASSES: [
+    '__background__',
+    'Apple', 'Banana', 'Grape',
+    'Orange', 'Pineapple', 'Watermelon'
+]
+
+# Number of classes (object classes + 1 for background class in Faster R-CNN).
+NC: 7
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True
